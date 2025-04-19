@@ -2,9 +2,9 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className="shadow-md">
+        <header className="shadow-md">
 
-            <div className="flex items-center justify-between px-8 py-2 max-w-7xl mx-auto ">
+            <div className="flex items-center justify-between px-4 sm:px-8 py-4 max-w-7xl mx-auto ">
                 <div className="flex items-center">
                     <img
                         className="h-20"
@@ -12,7 +12,7 @@ const Header = () => {
                     <p className="text-2xl font-bold text-primary-400 ">PrestAqui</p>
                 </div>
 
-                <div className="flex items-center border border-gray-300 pr-4 pl-6 py-2 rounded-full shadow-md">
+                <div className="hidden lg:flex items-center border border-gray-300 pr-4 pl-6 py-2 rounded-full shadow-md">
                     <p className="border-r pr-4 border-r-gray-300">Localização</p>
                     <p className="border-r px-4 border-r-gray-300">Data</p>
                     <p className="px-4">Prestador</p>
@@ -23,7 +23,7 @@ const Header = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
-                    </div>
+                    </div> 
 
                 </div>
 
@@ -40,11 +40,11 @@ const Header = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-8 text-gray-600">
                         <path fillRule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clipRule="evenodd" />
                     </svg>
-                    <p>Aline Mentz</p>                  
+                    <p className="max-w-20 truncate sm:max-w-32">Aline Mentz</p>                  
 
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 
